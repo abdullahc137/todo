@@ -1,0 +1,85 @@
+
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+  color: #fff;
+}
+
+.todo-svg {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 20px; /* Add some space between image and text */
+}
+
+.login-register-container {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  max-width: 300px; /* Limit container width */
+}
+
+.login-register-container input {
+  width: 92%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-register-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-in-register-button {
+  background-color: #ff7e5f; /* Orange color */
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.create-account-button {
+  background-color: #feb47b; /* Lighter orange color */
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .welcome {
+    padding: 20px;
+  }
+  .login-register-container input {
+    width: 80vw;
+    
+  }
+  .todo-svg {
+    width: 100px; /* Adjust size for smaller screens */
+  }
+
+  .login-register-container {
+    max-width: 90%; /* Make container wider for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome {
+    padding: 10px;
+  }
+
+  .todo-svg {
+    width: 80px; /* Adjust size for even smaller screens */
+  }
+}
